@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+
   <meta charset="UTF-8">
   <title>Mi Página con Bootstrap</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +18,7 @@
 
   <!-- CSS personalizado -->
   <link rel="stylesheet" href="estilos.css">
+
 </head>
 <body>
     
@@ -23,13 +32,42 @@
     </div>
     </header>
 
-   
+    <!-- coder # -->
+    <main>
+        <aside>
+
+        </aside>
+
+        <article>
+            <h1 id="history7">Historia de Git</h1>
+            <img src="assets/apoyo_visual.png" alt="Foto con el logo de Git en el centro" width="450">
+            <p>
+                En los albores del siglo XXI, cuando el código fluía libre y las batallas del software eran intensas,
+                surgió una necesidad crítica en la comunidad del núcleo de Linux: un sistema de control de versiones que fuera rápido, seguro y descentralizado.<br>
+                Hasta entonces, el equipo de desarrollo del kernel de Linux usaba un sistema propietario llamado BitKeeper.
+                Sin embargo, en 2005, una disputa sobre su licencia hizo que los desarrolladores perdieran el acceso gratuito al sistema.<br>
+                Fue entonces cuando Linus Torvalds, creador del kernel de Linux y caballero del código abierto,
+                decidió forjar su propia herramienta: Git. En apenas unas semanas, creó un sistema que cumpliera con tres principios esenciales:
+                <ol>
+                    <li>-Velocidad.</li>
+                    <li>-Integridad de los datos.</li>
+                    <li>-Soporte para desarrollo distribuido.</li>
+                </ol>
+                Git no sólo reemplazó a BitKeeper, sino que lo superó ampliamente.
+                Desde entonces, ha sido adoptado por millones de desarrolladores y es la base de plataformas como GitHub, GitLab y Bitbucket.
+            </p>
+            <figure><img src="assets/git.png" alt="" class="img-fluid">
+            <figcaption>Imagen de GitHub</figcaption>
+            </figure>
+        </article>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">MiSitio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
+
 
         <div class="collapse navbar-collapse" id="menuPrincipal">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -63,45 +101,52 @@
             </blockquote>
         </article>
 
-        <section class="services">
+        <section class="services" id="services7">
             <h2>nuestros servicios</h2>
-            <div class="service-container">
-                <div class="service">
-                    <h3>consultoria</h3>
-                    <p>asesoria profecional para hacer crecer tu negocio.</p>
+            <div class="d-flex flex-row">
+                <div class="service-container">
+                    <div class="service">
+                        <h3>consultoria</h3>
+                        <p>asesoria profecional para hacer crecer tu negocio.</p>
+                    </div>
+                    <div class="service">
+                        <h3>desarrollo web</h3>
+                        <p>diseñamos sitios web modernos y funcionales</p>
+                    </div>
+                    <div class="service">
+                        <h3>matketing digital</h3>
+                        <p>impusa tu negocio en linea</p>
+                    </div>
                 </div>
-                <div class="service">
-                    <h3>desarrollo web</h3>
-                    <p>diseñamos sitios web modernos y funcionales</p>
-                </div>
-                <div class="service">
-                    <h3>matketing digital</h3>
-                    <p>impusa tu negocio en linea</p>
+                <div class="m-5 w-100 video_container">
+                    <video controls src="assets/video/gitVideo.mp4" class="video_code"></video>
+                        
+
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="sidebar_section">
             <aside class="sidebar"> <!-- Coder 7 -->
                 <section class="cards">
                 <article class="card">
-                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        <a href="#history7">Historia</a>
                     </article>
                     <article class="card">
-                        <h3>adipisicing elit. Nesciunt dolorum voluptatum, explicabo, perferendis</h3>
+                        <a href="#services7">Nuestros servicios</a>
                     </article>
                     <article class="card">
-                        <h3>nobis sint voluptates numquam amet id dolores distinctio</h3>
+                        <a href="#sum7">Contactanos</a>
                     </article>
                     <article class="card">
-                        <h3>corrupti in voluptate fuga harum animi! Tenetur, error. Rem.</h3>
+                        <a href="#datetime7">Fecha y hora actual</a>
                     </article>
                 </section>
             </aside>
         </section>
 
         
-        <form class="output--" oninput="resultado.value=parseInt(x.value) + parseInt(y.value)">
+        <form class="output--" oninput="resultado.value=parseInt(x.value) + parseInt(y.value)" id="sum7">
             <input type="number" name="x">
             <input type="number" name="y">
             <output class="result" name="resultado" for="x y"></output>
@@ -120,7 +165,7 @@
                 <img src="./img/logo_whatsapp.png" alt="Logo WhatsApp" width="30"></a> <!-- coder 25 -->
         </div>
 
-        <div class="virtualClock">
+        <div class="virtualClock" id="datetime7">
             <h2>Current Time</h2>
             <p class="date"></p>
             <p class="time"></p>
@@ -128,7 +173,12 @@
 
         <p id="copyright">Copyright (c) 2025 Riwi.io Oficial</p><!--coder 6-->
     </footer><!--coder 6-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="./js/script.js"></script>
 </body>
 </html>
