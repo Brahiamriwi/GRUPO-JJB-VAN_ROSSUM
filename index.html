@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
 </head>
 <body>
     <header> <!-- Coder 1-->
@@ -14,9 +16,12 @@
     </header>
     <!-- coder # -->
     <main>
+        <aside>
+
+        </aside>
 
         <article>
-            <h1>Historia de Git</h1>
+            <h1 id="history7">Historia de Git</h1>
             <img src="assets/apoyo_visual.png" alt="Foto con el logo de Git en el centro" width="450">
             <p>
                 En los albores del siglo XXI, cuando el código fluía libre y las batallas del software eran intensas,
@@ -33,6 +38,9 @@
                 Git no sólo reemplazó a BitKeeper, sino que lo superó ampliamente.
                 Desde entonces, ha sido adoptado por millones de desarrolladores y es la base de plataformas como GitHub, GitLab y Bitbucket.
             </p>
+            <figure><img src="assets/git.png" alt="" class="img-fluid">
+            <figcaption>Imagen de GitHub</figcaption>
+            </figure>
         </article>
 
         <article>
@@ -51,45 +59,52 @@
             </blockquote>
         </article>
 
-        <section class="services">
+        <section class="services" id="services7">
             <h2>nuestros servicios</h2>
-            <div class="service-container">
-                <div class="service">
-                    <h3>consultoria</h3>
-                    <p>asesoria profecional para hacer crecer tu negocio.</p>
+            <div class="d-flex flex-row">
+                <div class="service-container">
+                    <div class="service">
+                        <h3>consultoria</h3>
+                        <p>asesoria profecional para hacer crecer tu negocio.</p>
+                    </div>
+                    <div class="service">
+                        <h3>desarrollo web</h3>
+                        <p>diseñamos sitios web modernos y funcionales</p>
+                    </div>
+                    <div class="service">
+                        <h3>matketing digital</h3>
+                        <p>impusa tu negocio en linea</p>
+                    </div>
                 </div>
-                <div class="service">
-                    <h3>desarrollo web</h3>
-                    <p>diseñamos sitios web modernos y funcionales</p>
-                </div>
-                <div class="service">
-                    <h3>matketing digital</h3>
-                    <p>impusa tu negocio en linea</p>
+                <div class="m-5 w-100 video_container">
+                    <video controls src="assets/video/gitVideo.mp4" class="video_code"></video>
+                        
+
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="sidebar_section">
             <aside class="sidebar"> <!-- Coder 7 -->
                 <section class="cards">
                 <article class="card">
-                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        <a href="#history7">Historia</a>
                     </article>
                     <article class="card">
-                        <h3>adipisicing elit. Nesciunt dolorum voluptatum, explicabo, perferendis</h3>
+                        <a href="#services7">Nuestros servicios</a>
                     </article>
                     <article class="card">
-                        <h3>nobis sint voluptates numquam amet id dolores distinctio</h3>
+                        <a href="#sum7">Contactanos</a>
                     </article>
                     <article class="card">
-                        <h3>corrupti in voluptate fuga harum animi! Tenetur, error. Rem.</h3>
+                        <a href="#datetime7">Fecha y hora actual</a>
                     </article>
                 </section>
             </aside>
         </section>
 
         
-        <form class="output--" oninput="resultado.value=parseInt(x.value) + parseInt(y.value)">
+        <form class="output--" oninput="resultado.value=parseInt(x.value) + parseInt(y.value)" id="sum7">
             <input type="number" name="x">
             <input type="number" name="y">
             <output class="result" name="resultado" for="x y"></output>
@@ -111,7 +126,7 @@
                 <img src="./img/logo_whatsapp.png" alt="Logo WhatsApp" width="30"></a> <!-- coder 25 -->
         </div>
 
-        <div class="virtualClock">
+        <div class="virtualClock" id="datetime7">
             <h2>Current Time</h2>
             <p class="date"></p>
             <p class="time"></p>
@@ -120,6 +135,7 @@
         <p id="copyright">Copyright (c) 2025 Riwi.io Oficial</p><!--coder 6-->
     </footer><!--coder 6-->
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
