@@ -1,19 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+
+  <meta charset="UTF-8">
+  <title>Mi Página con Bootstrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="estilos.css">
+
 </head>
 <body>
-    <header> <!-- Coder 1-->
-        <a class="logo" href="index.html"><img src="assets/img/riwi_logo.webp" alt="riwi_logo"></a>
-        <h1 class="title">Muro de Principios</h1>
-        <h2 class="subtitle">Entrenamiento en desarrollo de software.</h2>
+    
+    <header class="py-4 px-5 bg-primary text-white">
+    <div class="d-flex align-items-center gap-4">
+        <div class="header-logo">C1</div>
+        <div class="header-text">
+        <h1 class="m-0 fs-3">Título Principal</h1>
+        <p class="m-0 fs-6">Subtítulo de la sección</p>
+        </div>
+    </div>
     </header>
+
     <!-- coder # -->
     <main>
+
 
 
         <article>
@@ -45,8 +66,9 @@
 <br>
         </article>
 
+
         <article>
-            <h1>Historia de Git</h1>
+            <h1 id="history7">Historia de Git</h1>
             <img src="assets/apoyo_visual.png" alt="Foto con el logo de Git en el centro" width="450">
             <p>
                 En los albores del siglo XXI, cuando el código fluía libre y las batallas del software eran intensas,
@@ -63,7 +85,11 @@
                 Git no sólo reemplazó a BitKeeper, sino que lo superó ampliamente.
                 Desde entonces, ha sido adoptado por millones de desarrolladores y es la base de plataformas como GitHub, GitLab y Bitbucket.
             </p>
+            <figure><img src="assets/git.png" alt="" class="img-fluid">
+            <figcaption>Imagen de GitHub</figcaption>
+            </figure>
         </article>
+
 
         <article>
             
@@ -73,53 +99,100 @@
                 </span>
             </p>
 
-        </article>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">MiSitio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Proyectos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+  
+    <section class="container my-5 text-center">
+    <h2 class="mb-3">¡Bienvenido a Mi Sitio Web!</h2>
+    <p class="lead">Explora nuestro contenido, conoce nuestros proyectos y contáctanos para más información.</p>
+    </section>
+
+
+<main>
         <article class="qoute_container">
             <blockquote class="blockquote"> 
                 “The prison-house is the world of sight, the light of the fire is the sun, and you will not misapprehend me if you interpret the journey upwards to be the ascent of the soul into the intellectual world according to my poor belief, which, at your desire, I have expressed—whether rightly or wrongly God knows.”
             </blockquote>
         </article>
 
-        <section class="services">
-            <h2>Nuestros Servicios</h2>
-            <div class="service-container">
-                <div class="service">
-                    <h3>consultoria</h3>
-                    <p>asesoria profecional para hacer crecer tu negocio.</p>
+           <article class="qoute_container">
+            <blockquote class="blockquote"> 
+                “The prison-house is the world of sight, the light of the fire is the sun, and you will not misapprehend me if you interpret the journey upwards to be the ascent of the soul into the intellectual world according to my poor belief, which, at your desire, I have expressed—whether rightly or wrongly God knows.”
+            </blockquote>
+        </article>
+        <section class="services" id="services7">
+            <h2>nuestros servicios</h2>
+            <div class="d-flex flex-row">
+                <div class="service-container">
+                    <div class="service">
+                        <h3>consultoria</h3>
+                        <p>asesoria profecional para hacer crecer tu negocio.</p>
+                    </div>
+                    <div class="service">
+                        <h3>desarrollo web</h3>
+                        <p>diseñamos sitios web modernos y funcionales</p>
+                    </div>
+                    <div class="service">
+                        <h3>matketing digital</h3>
+                        <p>impusa tu negocio en linea</p>
+                    </div>
                 </div>
-                <div class="service">
-                    <h3>desarrollo web</h3>
-                    <p>diseñamos sitios web modernos y funcionales</p>
-                </div>
-                <div class="service">
-                    <h3>matketing digital</h3>
-                    <p>impusa tu negocio en linea</p>
+                <div class="m-5 w-100 video_container">
+                    <video controls src="assets/video/gitVideo.mp4" class="video_code"></video>
+                        
+
                 </div>
             </div>
         </section>
 
-        <section>
+
+        <section id="sidebar_section">
             <aside class="sidebar"> <!-- Coder 7 -->
                 <section class="cards">
                 <article class="card">
-                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                        <a href="#history7">Historia</a>
                     </article>
                     <article class="card">
-                        <h3>adipisicing elit. Nesciunt dolorum voluptatum, explicabo, perferendis</h3>
+                        <a href="#services7">Nuestros servicios</a>
                     </article>
                     <article class="card">
-                        <h3>nobis sint voluptates numquam amet id dolores distinctio</h3>
+                        <a href="#sum7">Contactanos</a>
                     </article>
                     <article class="card">
-                        <h3>corrupti in voluptate fuga harum animi! Tenetur, error. Rem.</h3>
+                        <a href="#datetime7">Fecha y hora actual</a>
+
                     </article>
                 </section>
             </aside>
         </section>
 
         
-        <form class="output--" oninput="resultado.value=parseInt(x.value) + parseInt(y.value)">
+        <form class="output--" oninput="resultado.value=parseInt(x.value) + parseInt(y.value)" id="sum7">
             <input type="number" name="x">
             <input type="number" name="y">
             <output class="result" name="resultado" for="x y"></output>
@@ -131,9 +204,6 @@
 
         <div class="footer-div">
 
-            <a href="https://riwi.io/" target="_blank"> <!--coder 6-->
-                <img id="riwi_logo" src="./img/logo_riwi.png" alt="Logo Riwi" width="30"></a> <!-- coder 25 -->
-
             <a href="https://www.instagram.com/riwi.io/" target="_blank"> <!--coder 6-->
                 <img src="./img/logo_instagram.png" alt="Logo Instagram" width="30"></a> <!-- coder 25 -->
             
@@ -141,7 +211,9 @@
                 <img src="./img/logo_whatsapp.png" alt="Logo WhatsApp" width="30"></a> <!-- coder 25 -->
         </div>
 
-        <div class="virtualClock">
+
+        <div class="virtualClock" id="datetime7">
+
             <h2>Current Time</h2>
             <p class="date"></p>
             <p class="time"></p>
@@ -149,6 +221,11 @@
 
         <p id="copyright">Copyright (c) 2025 Riwi.io Oficial</p><!--coder 6-->
     </footer><!--coder 6-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="./js/script.js"></script>
 </body>
