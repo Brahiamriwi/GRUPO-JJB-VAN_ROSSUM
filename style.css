@@ -80,7 +80,11 @@ header {
     height: 50px;
     margin-right: 15px;
 }
-
+.blockquote{
+    border-left: 2px solid black;
+    background-color: #eeeeee;
+    padding-left: 2rem;
+}
 /* Start - Coder 7: Aside */
 .sidebar{
     display: flex;
@@ -181,14 +185,18 @@ header {
     padding: 40px;
     background-color: rebeccapurple;
     text-align: center;
+    
+}
+.services h2{
+    color: white;
 }
 
-.services-container{
+.service-container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .service{
