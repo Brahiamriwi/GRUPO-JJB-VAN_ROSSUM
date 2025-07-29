@@ -99,6 +99,7 @@ header {
     margin-right: 15px;
 }
 
+
 #sidebar_section {
     display: flex;
     justify-content: end;
@@ -215,14 +216,18 @@ header {
     padding: 40px;
     background-color: rebeccapurple;
     text-align: center;
+    
+}
+.services h2{
+    color: white;
 }
 
-.services-container{
+.service-container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .service{
